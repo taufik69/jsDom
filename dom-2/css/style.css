@@ -1,0 +1,18 @@
+.root {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.btn {
+  padding: 20px 30px;
+  background-color: black;
+  color: white;
+  box-shadow: whitesmoke;
+}
+.output {
+  padding: 10px 10px;
+}
