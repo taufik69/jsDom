@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul,
+ol {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+.root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  row-gap: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.inputField {
+  padding: 20px 30px;
+  box-shadow: white;
+}
+
+.copy_btn {
+  padding: 10px 20px;
+  background: #000;
+  color: white;
+  box-shadow: white;
+}
+
+.generate_color {
+  padding: 10px 40px;
+  background: #000;
+  color: white;
+  box-shadow: white;
+}
+.toast_message {
+  border-radius: 5px;
+  padding: 20px 100px;
+  color: white;
+  position: absolute;
+  background: green;
+  top: 2rem;
+  right: 5rem;
+}
+.toast_message-slide-in {
+  animation: toast-message-slide-in 0.3s ease-in;
+}
+
+.toast_message-slide-out {
+  animation: toast-message-slide-out 0.3s ease-in;
+}
+
+@keyframes toast-message-slide-in {
+  from {
+    transform: translateX(200px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes toast-message-slide-out {
+  from {
+    transform: translateX(0px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(200px);
+    opacity: 1;
+  }
+}
