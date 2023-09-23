@@ -35,6 +35,7 @@ function main() {
 /**
  * @Generator funtion
  * */
+
 function generatorHexa() {
   let red = Math.floor(Math.random() * 256);
   let green = Math.floor(Math.random() * 256);
